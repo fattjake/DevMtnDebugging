@@ -12,6 +12,10 @@
 		F2846FEC1DD642DE008C5C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2846FEA1DD642DE008C5C9F /* Main.storyboard */; };
 		F2846FEE1DD642DE008C5C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2846FED1DD642DE008C5C9F /* Assets.xcassets */; };
 		F2846FF11DD642DE008C5C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2846FEF1DD642DE008C5C9F /* LaunchScreen.storyboard */; };
+		F2846FFA1DD647CD008C5C9F /* iTunesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2846FF81DD647CD008C5C9F /* iTunesResults.swift */; };
+		F2846FFB1DD647CD008C5C9F /* iTunesRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2846FF91DD647CD008C5C9F /* iTunesRequestManager.swift */; };
+		F2846FFD1DD64CCB008C5C9F /* CustomiTunesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2846FFC1DD64CCB008C5C9F /* CustomiTunesCell.swift */; };
+		F2846FFF1DD6538E008C5C9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2846FFE1DD6538E008C5C9F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F2846FED1DD642DE008C5C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2846FF01DD642DE008C5C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2846FF21DD642DE008C5C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2846FF81DD647CD008C5C9F /* iTunesResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesResults.swift; sourceTree = "<group>"; };
+		F2846FF91DD647CD008C5C9F /* iTunesRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesRequestManager.swift; sourceTree = "<group>"; };
+		F2846FFC1DD64CCB008C5C9F /* CustomiTunesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomiTunesCell.swift; sourceTree = "<group>"; };
+		F2846FFE1DD6538E008C5C9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		F2846FE51DD642DE008C5C9F /* Search iTunes Debugging */ = {
 			isa = PBXGroup;
 			children = (
-				F2846FE61DD642DE008C5C9F /* AppDelegate.swift */,
+				F28470001DD65CE1008C5C9F /* Networking */,
+				F2846FFE1DD6538E008C5C9F /* DetailViewController.swift */,
 				F2846FE81DD642DE008C5C9F /* ViewController.swift */,
+				F2846FFC1DD64CCB008C5C9F /* CustomiTunesCell.swift */,
+				F2846FE61DD642DE008C5C9F /* AppDelegate.swift */,
 				F2846FEA1DD642DE008C5C9F /* Main.storyboard */,
 				F2846FED1DD642DE008C5C9F /* Assets.xcassets */,
 				F2846FEF1DD642DE008C5C9F /* LaunchScreen.storyboard */,
 				F2846FF21DD642DE008C5C9F /* Info.plist */,
 			);
 			path = "Search iTunes Debugging";
+			sourceTree = "<group>";
+		};
+		F28470001DD65CE1008C5C9F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F2846FF81DD647CD008C5C9F /* iTunesResults.swift */,
+				F2846FF91DD647CD008C5C9F /* iTunesRequestManager.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2846FFD1DD64CCB008C5C9F /* CustomiTunesCell.swift in Sources */,
 				F2846FE91DD642DE008C5C9F /* ViewController.swift in Sources */,
+				F2846FFB1DD647CD008C5C9F /* iTunesRequestManager.swift in Sources */,
+				F2846FFF1DD6538E008C5C9F /* DetailViewController.swift in Sources */,
+				F2846FFA1DD647CD008C5C9F /* iTunesResults.swift in Sources */,
 				F2846FE71DD642DE008C5C9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
